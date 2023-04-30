@@ -1,20 +1,20 @@
 {% load static %}
 
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>
-    {% block title %}
-      Sensive Blog
-    {% endblock %}
-  </title>
-  <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
-  <link rel="stylesheet" href="{% static 'styles.min.css' %}">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+      {% block title %}
+        Sensive Blog
+      {% endblock %}
+    </title>
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'styles.min.css' %}">
+  </head>
 
-<body>
+  <body>
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -39,16 +39,16 @@
                 <li><a href="#"><i class="ti-instagram"></i></a></li>
                 <li><a href="#"><i class="ti-skype"></i></a></li>
               </ul>
-            </div> 
+            </div>
           </div>
         </nav>
       </div>
     </header>
     <!--================Header Menu Area =================-->
 
-  {% block content %}
-  {% endblock %}
-    
+    {% block content %}
+    {% endblock %}
+
     <!--================ Start Footer Area =================-->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -74,7 +74,7 @@
                   <div class="d-flex flex-row">
 
                     <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
-                      required="" type="email">
+                    required="" type="email">
 
 
                     <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
@@ -122,4 +122,5 @@
     </footer>
     <!--================ End Footer Area =================-->
     <script src="{% static 'scripts.js' %}"></script>
-</body>
+  </body>
+</html>
